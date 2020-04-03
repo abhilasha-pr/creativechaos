@@ -1,0 +1,676 @@
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+* {	
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+li, ul, a, u 
+{
+	list-style: none;
+    text-decoration: none;
+}
+.container 
+{
+	width: 100%;
+	margin-left: auto;margin-right: auto;	
+	margin: 0 auto;
+}
+.cf:after 
+{
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+
+/*for the logo and the nav bar*/
+#navbar{
+	width: 100%;
+    z-index: 78787;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+}
+#navbar .logo1{
+	float: left;
+}
+#navbar .logobar{
+	background-image: url(../brownboard1213.png);
+	background-position: top;
+	height: 90px;
+	margin-top: -18px;
+}
+#navbar .endlogo{
+	float: right;
+	width: 90px;
+
+}
+
+/*the list of nativation menus*/
+#navbar .navlist li a{
+	font-family: 'Bree Serif', serif;
+	color: #f1c097;
+	font-size: .9em; 
+	letter-spacing: 0.8px;
+	opacity: 0.7;
+}
+#navbar .navright li a{
+	float: right;
+	display: inline-block;
+	padding: 0 20px;
+    margin: 33px 30px;
+
+	/*top bottom left right */
+}
+#navbar .navleft li a{
+	float: left;
+	display: inline-block;
+	margin-top: 33px;
+    margin-left: 86px;
+	margin-right: -10px;
+	padding: 0 20px;
+}
+#navbar .navlist li a:hover  {
+	opacity: .92;
+	transform: scale(0.9);
+	transition: .2s;
+}
+/*responsive for the logo bar and nav bar*/
+
+@media only screen and (max-width: 1200px) {
+    #navbar .navlist li a{
+        padding: 0px 20px;
+        margin: 33px 15px;
+    }
+
+}
+@media only screen and (max-width: 1080px) {
+    #navbar .navleft li a{
+        padding: 0px 20px;
+        margin: 33px 20px;
+    }
+    #navbar .navright li a{
+        padding: 0px 5px;
+        margin: 33px 10px;
+    }
+}
+@media only screen and ( max-width: 980px) {
+
+    #navbar .logobar{
+    	height: 120px;
+    	background-position: center top;
+        }
+        #navbar .navlist li a{
+        margin-top: 85px;
+        font-size: 0.75em;
+    }
+    #main-bg {
+		width: 100%;
+	}
+	
+
+
+
+}
+@media only screen and ( max-width: 800px) {
+	#menu-btn .menu-contents p{
+		margin: 0px -110px;
+		padding: 0px 10px;
+		font-size: .9em;
+	}
+	#main-bg .about-left .abt-left{
+		float: left;
+		clear: both;
+		text-align: left;
+	}
+	#main-bg .abt-left{
+		font-size: .82em;
+	}
+	#main-bg .phil-left .live1{
+		font-size: .9em;
+	}
+	#main-bg .phil-content{
+		font-size: .8em;
+	}
+	#main-bg .phil-content, #main-bg .about-content{
+		width: 100%;
+	}
+	#main-bg .phil-left li img{
+		width: 100%;
+	}
+	#navbar .navleft li a{
+        float:left;
+        display: block;
+        padding:2px;
+    }
+	
+}
+@media only screen and ( max-width: 640px) {
+    #navbar .logobar{
+    	height: 120px;
+    }
+    #navbar .navleft li a{
+        float:left;
+        display: block;
+        padding:2px;
+    }
+    #navbar .navright li a{
+        display: block;
+        padding:3px;
+    }
+   #main-bg .phil-content, #main-bg .about-content{	
+		width: 100%;
+	}
+	
+	#main-bg .about-left li img{
+		float: left;
+		display: inline;
+	}
+	#menu-btn {
+    	padding: 0px 10px;
+    font-size: .79em;}
+	
+}
+
+@media only screen and ( max-width: 580px) {
+    #navbar .navleft li{
+    	float: left;
+    	margin-top: -90px;
+    	margin-left: -10px;
+        z-index: 8888;
+    }
+    #navbar .navright li{
+        float: right;
+        margin-top: -90px;
+        margin-right:-15px;  
+        z-index: 8888;   
+    }
+    #navbar .logobar {
+        padding-top:80px;
+    }
+    #navbar .endlogo {
+        opacity: 0;
+    }
+
+    #navbar .logo1 {
+        opacity: 0;
+    }
+    #menu-btn p{
+        margin-left: -60px;
+    }
+    
+   
+}
+
+@media only screen and ( max-width: 515px) {
+     #navbar .navleft li{
+        float: left;
+        margin-left: -35px;
+        z-index: 8888;
+    }
+    #navbar .navleft .abc{
+        margin-left: -75px;
+    }
+    #navbar .navright .abcde{
+        margin-right: -95px;
+    }
+    #navbar .navright li{
+        float: right;
+        margin-right:-30px;  
+        z-index: 8888;   
+    }
+    #menu-btn {
+    	padding: 0px 10px;
+    	font-size: .76em;}
+    
+}
+@media only screen and ( max-width: 490px) {
+	    .gotop a{
+    	opacity: 0;
+    }
+    #foot .socialmedia {
+      display: block;
+      float: left;
+    }
+}
+
+@media only screen and ( max-width: 340px) {
+    #navbar .navleft li{
+        float: left;
+        margin-left: -60px;
+        z-index: 8888;
+    }
+    #navbar .navleft .abc{
+        margin-left: -100px;}
+}
+
+
+
+
+
+
+/*the main cafe image*/
+#mainimg{
+	width:100%;
+	z-index: 999; /*making the image fit to the screen, remains 100% even after reducing screen size*/
+}
+#mainimg .section-img{
+	height:640px;
+}
+
+/*Menu section*/
+#menu-bg{
+	background-color: #f58531;
+	width: 100%;
+	border-top: 0px;
+	padding-bottom: 60px;
+}
+#menu-btn{
+	text-align: center;
+}
+#menu-btn .click-menu {
+	display: inline-block;
+	background-color: #221812;
+	color: #f1c097;
+	border: 1px solid #221812;
+	font-size: 1em;
+	padding: 1em 2em; /* topBottom leftRight */
+	line-height: 1;
+	border-radius: .5em;
+	cursor: pointer;
+	font-family: 'Kanit', sans-serif;
+	transition: all .3s;
+	opacity: .95;
+}
+#menu-btn .click-menu:hover {
+	color: #221812;
+	background-color: #f58531;	
+}
+
+#menu-btn .menu-contents {
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	font-size: 1.1em;
+	color: #302218;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin: 0px 90px;
+}
+#main-bg{
+	background-image: url(../img/3.jpg);
+	width: 100%;
+	border-top: 0px;
+	padding-top:30px;
+	padding-bottom: 25px;
+	border-bottom: 0px;
+}
+/*About us - Story Section*/
+
+#main-bg .about-left li {
+	display: inline-block;
+	background-color: white;
+	float: left;
+	width: 50%;
+	z-index: 11;
+	text-align: center;
+}
+	#main-bg .about-left li img{
+		background-color: white;
+		display: inline-block;
+		float: right;
+		width: 90%;	
+		margin-right: 20px;
+		border-radius: 10px;
+		margin-top: 15%;
+	}
+#main-bg .about-content li h2 {
+	background-color: white;
+	font-family: 'Kanit', sans-serif;
+	letter-spacing: 1.2px;
+	word-spacing: 2px;
+	padding :0 5px;
+	border: 1px solid #302218; 
+	border-radius: 10px;
+}
+#main-bg .about-left{
+	background-color: white;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: #302218;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	margin: 0px 120px;
+	padding-left: 0px;
+	padding-right: 35px;
+}
+@media only screen and ( max-width: 880px) {
+	#main-bg{
+		width: 100%; 	
+		text-align: center;
+	}
+
+	#main-bg .about-left{
+    	margin:0px 20px;
+    	padding-right: 20px;
+    }
+    #main-bg .abt-left p{
+		text-align: center;
+	}
+	#main-bg .about-content li h2{
+		font-size: 1.5em;
+	}
+}
+@media only screen and ( max-width: 720px) {
+	
+#main-bg .about-left li{
+    	width: 100%;
+    }
+    #main-bg .about-left li img{
+    	width: 80%;
+    	margin-top: 0px;
+    	float: none;
+    	margin-right: 0px;
+	}
+	#main-bg .about-left{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#main-bg .about-content li h2{
+		font-size: 1.1em;
+	}
+}
+@media only screen and ( max-width: 540px) {
+	#main-bg .about-content li h2{
+		font-size: .9em;
+	}
+
+}
+
+/*Philosophy Section*/
+
+
+#main-bg .phil-left li {
+	padding-right:10px;
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+#main-bg .phil-left li img{
+	float: left;
+	width: 95%;
+	border-radius: 10px;
+	margin-top: 17%;
+	margin-bottom: 30px;
+	
+}
+#main-bg .phil-content li h2 {
+	padding-right:10px;
+	font-family: 'Kanit', sans-serif;
+	letter-spacing: 1.2px;
+	word-spacing: 2px;
+	/*padding :0 10px;*/
+	border: 1px solid #302218; 
+	border-radius: 10px;
+}
+#main-bg .phil-content .live{
+	border-top: 1px solid #302218;
+	border-left: 1px solid #302218; 
+	border-right: 1px solid #302218;  
+	clear: both;
+	margin-top:10px;
+	width: 90%;
+	margin-bottom: 0px;
+	padding-top:5px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#main-bg .phil-content .live1{
+	border-bottom: 1px solid #302218;
+	border-left: 1px solid #302218; 
+	border-right: 1px solid #302218;  
+	clear: both;
+	width: 90%;
+	margin: 0px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding-bottom:5px;
+	/*padding: 15px 10px;*/
+}
+#main-bg .phil-left {
+	background-color: white;
+	font-family: 'Kanit', sans-serif;
+	text-align: center;
+	font-size: 1em;
+	color: #302218;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin: 0px 120px;
+}
+@media only screen and ( max-width: 880px) {
+	 #main-bg .phil-left .down img{
+    	margin-top: 0px;
+    }
+	#main-bg .phil-left{
+    	margin:0px 20px;
+    	padding-left: 20px;
+    }
+    #main-bg .phil-left .down p,h3{
+    	float: right;
+    	padding-right: 20px;
+    
+    }
+#main-bg .phil-content li h2{
+		font-size: 1.8em;
+	}
+
+}
+@media only screen and ( max-width: 720px) {
+#main-bg .phil-left li{
+    	width: 100%;
+    	text-align: center;
+    	margin-right: 10px;
+    }
+    #main-bg .phil-left li img{
+    	width: 80%;
+    	margin-bottom: 0px;
+    	float: none;
+    	margin-right: 10px;
+	}
+    #main-bg .phil-left .down p,h3{
+    	width: 100%; 	
+    	border: none;
+    	float: none;
+    	text-align: center;
+    	margin-right: -20px;
+    	padding-right: 5px;
+    }
+   
+    #main-bg .phil-content .live{
+    	border:none;
+    	float: none;
+    	width: 100%; 
+    	/*text-align: center;*/
+    	margin-right: -20px;
+
+    }
+    #main-bg .phil-content li h2{
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and ( max-width: 540px) {
+	#main-bg .phil-content li h2{
+		font-size: 1.1em;
+	}
+
+}
+
+
+
+/*TOP BUTTON*/
+.gotop a{
+    cursor: pointer;
+    position: fixed;
+    right: 2em;
+    bottom: 7em;
+    vertical-align: center;
+    text-align: center;
+    padding-top: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+     background-color: black;
+    color:white;
+    z-index: 1;
+}
+.gotop{
+    opacity: 0.7;
+}
+.gotop a:hover{
+    transition: all .25s;
+    background-color:#f58531;
+    color: black;
+}
+
+
+/*contacts form*/
+.contacts{
+	background-color: #f58531;
+    padding: 0 30px;
+}
+.contact-form {
+    max-width: 570px;
+    margin: 0 auto;
+}
+form {
+    display: block;
+    margin-top: 0em;
+    padding-bottom: 60px;
+    padding-top: 40px;
+}
+.form .small-section-heading {
+    margin-bottom: 50px;
+   font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.small-section-heading {
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.btn-full {
+    width: 100%;
+    padding: 11px 24px;
+    font-size: 11px;
+    border-radius: 3px;
+    color: #fff;
+    background: #000;
+    border: 2px solid transparent;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+.btn-full:focus, .btn-full:hover {
+    font-weight: 700;
+    color: rgba(255,255,255,.85);
+    background: rgba(0,0,0,.8);
+    text-decoration: none;
+    transition: all .4s;
+}
+.form input[type=email]:hover, .form input[type=text]:hover{
+    border-color: #ccc;
+}
+.form input[type=email], .form input[type=text] {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #777;
+    border: 1px solid #e9e9e9;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px 12px;
+    font-size: .8em;
+    color: black;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;   
+
+}
+button {
+    overflow: visible;
+}
+textarea {
+    overflow: auto;
+}
+.form textarea:hover {
+    border-color: #ccc;
+}
+.form textarea {
+    font-size: 10px;
+    font-weight: 400;
+    text-transform: uppercase!important;
+    letter-spacing: 1px;
+    color: #111;
+    border-color: #e9e9e9;
+    border-radius: 3px;
+    box-shadow: none;
+}
+textarea.form-control {
+    height: auto;
+}
+
+
+/*footer*/
+#foot{
+	font-family: 'Bree Serif', serif;
+	color: #222;
+	font-size: .83em;
+	width: 100%;
+	padding-top: 20px;
+	opacity: 0.8;
+}
+#foot .footercontent{
+	float: left;
+	margin: 0px 50px;
+	margin-top: -10px;
+}
+#foot .name{
+	padding:1px;
+	font-size: .81em;
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+#foot .socialmedia{
+	margin: 5px 30px;
+	margin-top: -20px;
+}
+#foot .socialmedia li a{
+	float: right;
+	display: inline-block;
+	padding: 8px;
+	opacity: 0.6;
+}
+#foot .socialmedia a:hover{
+	opacity: 1;
+	transform: rotateX(360deg);
+	transition: .4s;
+}
